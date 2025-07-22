@@ -25,15 +25,15 @@
 <!-- linea 1 info -->
         <form>
             <div class="row mb-3">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="card" class="form-label" >Card # </label>
                         <input type="number" placeholder="xxxxxxxxxxxxx" class="form-control" > 
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                      <label for="cvc" class="form-label">CVC # </label>
                     <input type="number" placeholder="0000" class="form-control"></div>
 
-                <div class="col-md-3"> <label for="amount">Amount </label>
+                <div class="col-md-4"> <label for="amount">Amount </label>
                   <div class="input-group">   
                     <select name="monedas" id="" style="border-radius: 1px;" >
                     <option value="dolar-usd">$</option>
@@ -86,26 +86,27 @@
                 </div>
 
                 <!-- imagenes de visa  -->
-                 <div class="row mb-3"> 
+                 <div class="row mb-3 me-2"> 
 
-                 <div class="col-6 mb-3" >
+                 <div class="col-6 mb-3">
           <label class="form-label">We accept:</label>
-          <div>
-           <label class="card-option">
+          <div class="alert alert-dark" role="alert" style="width: 250px;">
+            <label class="card-option">
       <input type="radio" name="cardType" value="mastercard">
-            <img src="https://img.icons8.com/ios-filled/50/000000/mastercard-logo.png" width="50"> </label>
+            <img src="https://img.icons8.com/ios-filled/50/000000/mastercard-logo.png" width="25"> </label>
 
             <label class="card-option">
       <input type="radio" name="cardType" value="visa">
-            <img src="https://img.icons8.com/ios-filled/50/000000/visa.png" width="50"> </label>
+            <img src="https://img.icons8.com/ios-filled/50/000000/visa.png" width="25"> </label>
 
             <label class="card-option">
       <input type="radio" name="cardType" value="amex">
-            <img src="https://img.icons8.com/ios-filled/50/000000/amex.png" width="50"></label>
+            <img src="https://img.icons8.com/ios-filled/50/000000/amex.png" width="25"></label>
 
             <label class="card-option">
       <input type="radio" name="cardType" value="discover">
-            <img src="https://img.icons8.com/ios-filled/50/000000/discover.png" width="50"></label>
+            <img src="https://img.icons8.com/ios-filled/50/000000/discover.png" width="25"></label>
+            
           </div>
         </div>
          
@@ -115,11 +116,13 @@
         </div>
 
         </div>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-secondary">Cancel</button>
+        
+        <div class="card-footer d-flex justify-content-end" class="alert-dark" >
+          <button type="button" class="btn btn-secondary me-2">Cancel</button>
           <button type="submit" class="btn btn-primary">Send</button>
         </div>
+
+        
 
             </div>
         </form>
